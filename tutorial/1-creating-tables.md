@@ -32,7 +32,7 @@ When defining the attributes that would form the primary key we had to specify b
       AttributeType: 'S'
     }
 
-Possible values for `AttributeType` are: `S` - string, `N` - number, `B` - binary, `BOOL` - boolean, `NULL` - null, `L` - list, an array of values, `M` - maps, key-value pairs of values, and `SS`/`NS`/`BS` - string/number/boolean sets.
+Possible values for `AttributeType` are: `S` - string, `N` - number, `B` - binary, `BOOL` - boolean, `NULL` - null, `L` - list (an ordered collection of values, of any type), `M` - maps, key-value pairs of values, and `SS`/`NS`/`BS` - string/number/boolean sets (an unordered collection of unique values - all of the same scalar type)
 
 ## Choosing a primary key
 
