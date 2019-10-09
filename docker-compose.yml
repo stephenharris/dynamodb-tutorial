@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+
+  dynamodb:
+    image: amazon/dynamodb-local:latest
+    container_name: dynamodb
+    restart: always
+    ports:
+      - 8000:8000
+
+  nodejs:
+    image: node:10
+    container_name: node
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - "8081"
