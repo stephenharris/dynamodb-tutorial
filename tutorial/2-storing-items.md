@@ -27,6 +27,7 @@ Note:
  2. If we change the status (or another non-key attribute) it replaces the item
  3. If we change the type of the primary key attributes (`CUSTOMER_REF` or `DATE`) to a number we get an error, but we don't get an error if we change the type of any other attribute.
  4. If we add / remove any non-key attribute the item is succesfully added/replaced
+ 5. Trying to set an attribute to an empty string fails (**DynamoDb does not support empty values**)
 
 Recall that no-sql is schema-less. So non-primary key attributes might have different types, or not exist all.
 
